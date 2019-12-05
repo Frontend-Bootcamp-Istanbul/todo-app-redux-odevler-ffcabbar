@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import TodoList from "./TodoList";
 import AddTodo from "./AddTodo";
 import RemoveAll from "./RemoveAll";
-import "./App.css";
+import "./App.scss";
 import Filters from "./Filters";
 import {connect} from "react-redux";
 import {setTodos, addTodo} from "./actionCreators/actionCreaters";
