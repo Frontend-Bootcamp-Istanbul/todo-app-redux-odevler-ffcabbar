@@ -3,9 +3,6 @@ import Todo from './Todo';
 
 
 class TodoList extends React.Component{
-    constructor(props){
-        super(props);
-    }
     render(){
         return (
             <div className="todo-list">
@@ -15,8 +12,7 @@ class TodoList extends React.Component{
                     this.props.todos.map((todo) => {
                         return <Todo
                             {...todo}
-                            key={todo.id}
-                            onCheckedToggle={this.props.onCheckedToggle}
+                            key = {Math.random()}
                         />
                     })
                 }
